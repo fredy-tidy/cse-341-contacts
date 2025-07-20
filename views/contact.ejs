@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contactos</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        h1 { color: #333; }
+        .contact-list { list-style: none; padding: 0; }
+        .contact-item {
+            background-color: #fff;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .contact-item strong { color: #0056b3; }
+    </style>
+</head>
+<body>
+    <h1>The Contact with Id = <%= contact._id %> </h1>
+
+    <% if (contact) { %>
+        <ul class="contact-list">
+                <li class="contact-item">
+                    <strong>Name:</strong> <%= contact.firstName %> <%= contact.lastName %><br>
+                    <strong>Email:</strong> <%= contact.email %><br>
+                    <strong>Favorite Color:</strong> <%= contact.favoriteColor %><br>
+                    <strong>Birth date:</strong> <%= contact.birthday %><br>
+                    </li>
+
+        </ul>
+    <% } else { %>
+        <p>No se encontraron contactos.</p>
+    <% } %>
+</body>
+</html>
