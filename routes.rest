@@ -1,0 +1,19 @@
+
+// Production 
+### getAll  for get all contacts only have 3 
+GET https://cse-341-contacts-1p1s.onrender.com/
+
+### Get contact by id 687c0a61c39a9fddb4e804d8 
+
+### this is David Second
+GET https://cse-341-contacts-1p1s.onrender.com/687c0a61c39a9fddb4e804d8
+
+### this is Maria Third
+
+GET https://cse-341-contacts-1p1s.onrender.com/687c0b03c39a9fddb4e804d9
+
+### this is John Carther
+GET https://cse-341-contacts-1p1s.onrender.com/687c0844c39a9fddb4e804d6
+
+
+// local host 

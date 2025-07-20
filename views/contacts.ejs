@@ -24,7 +24,8 @@
     <% if (contacts && contacts.length > 0) { %>
         <ul class="contact-list">
             <% contacts.forEach(function(contact) { %>
-                <li class="contact-item">
+                <li class="contact-item" >
+                    
                     <strong>Id:</strong> <%= contact._id %><br>
                     <strong>Name:</strong> <%= contact.firstName %> <%= contact.lastName %><br>
                     <strong>Email:</strong> <%= contact.email %><br>
