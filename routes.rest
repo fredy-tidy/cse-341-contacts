@@ -16,4 +16,45 @@ GET https://cse-341-contacts-1p1s.onrender.com/687c0b03c39a9fddb4e804d9
 GET https://cse-341-contacts-1p1s.onrender.com/687c0844c39a9fddb4e804d6
 
 
-// local host 
+
+
+
+
+### Local host
+
+### getAll
+GET http://localhost:3000/contacts
+
+### getSingel   John Carther
+GET http://localhost:3000/contacts/getOne/687c0844c39a9fddb4e804d6
+
+### getSingel David Second
+GET http://localhost:3000/contacts/getOne/687c0a61c39a9fddb4e804d8
+
+
+### Create contact
+POST http://localhost:3000/contacts/create
+content-type: application/json
+
+{
+    "firstName": "Pepe",
+    "lastName": "perez",
+    "email": "pepeperez@email.com",
+    "favoritColor": "yellow",
+    "birthday": "06/20/2000"
+}
+
+### update Contact
+PUT http://localhost:3000/contacts/update/687c0a61c39a9fddb4e804d8
+Content-Type: application/json
+
+{
+    "firstName": "David",
+    "lastName": "Second",
+    "email": "DavidSecond@email.com",
+    "favoritColor": "yellow",
+    "birthday": "06/20/2000"
+}
+
+### delete Contact
+DELETE http://localhost:3000/contacts/delete/687f269380263d6f5cbc0ce5
